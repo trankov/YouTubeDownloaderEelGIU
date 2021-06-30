@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* REQUEST FORM */
+
+.urlform {
+    width: 1000px;
+    padding: 1vh 1vh 1vh 1vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#txtTYurl {
+    width: 500px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13pt;
+
+    padding-left:  13pt;
+    padding-right: 13pt;
+
+    border-radius: 25px;
+    border-color: #ccc;
+}
+
+#btnSubmit {
+    width: 250px;
+    border-radius: 25px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13pt;
+}
+
+/* VIDEO DESCRIPTION */
+
+#lblSpaceholder {
+    width: 1000px;
+    padding: 25px 1vw 1vh 1vw;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.imgpreview, #imgpreview {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+#videodescription {
+    display: inline-block;
+    width: 670px;
+    height: 160px;
+    vertical-align: top;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+
+#channelname {
+    display: inline-block;
+
+    font-weight: 700;
+    font-size:   10pt;
+
+    padding: 0px 10pt 0px 10pt;
+    background-color: crimson;
+    border-radius: 15px;
+}
+
+#channelurl {
+    text-decoration: none;
+    color: white;
+}
+
+#videourl {
+    text-decoration: none;
+}
+
+#videotitle {
+    margin-bottom: 20px;
+    margin-top:    20px;
+    font-size:   18pt;
+    font-weight: 200;
+}
+
+#videosummary {
+    font-weight: 300;
+    font-size:   10pt;
+    margin-bottom: 20px;
+}
+
+#videotags {
+    font-size: 7pt;
+    font-weight: 500;
+    color: white;
+}
+
+.keyword {
+    background-color: midnightblue;
+    padding-left:  7pt;
+    padding-right: 7pt;
+    margin-left:  2px;
+    margin-right: 2px;
+}
+
+/* PROGRESS BAR */
+
+#progressbar, #progressvalue {
+  height: 30px;
+  border-radius: 25px;
+}
+
+#progressvalue {
+    /* background-color: midnightblue; */
+    background: #0E4AFF;
+    background: -webkit-linear-gradient(top, #0E4AFF, #A639AA);
+    background:    -moz-linear-gradient(top, #0E4AFF, #A639AA);
+    background:         linear-gradient(to bottom, #0E4AFF, #A639AA);
+
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 16pt;
+    color: white;
+}
+
+#progressbar {
+    background: #d7d7d7;
+    background: -webkit-linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+    background:         linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+
+    -webkit-box-shadow: 6px 3px 16px 0px rgba(222, 65, 130, 0.75);
+    -moz-box-shadow:    6px 3px 16px 0px rgba(222, 65, 130, 0.75);
+    box-shadow:         6px 3px 16px 0px rgba(222, 65, 130, 0.75);
+
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    /* border: 1px solid black; */
+    display: none;
+    padding: 0px 0px 0px 0px;
+}
+
+/* TRACKS TABLE */
+
+th {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#tracks {
+    width: 100%;
+    font-size: 8pt;
+}
+
+#tracks th {
+    font-weight: 400;
+    font-size: 10pt;
+    text-align: left;
+    background-color: honeydew;
+    padding-left: 3pt;
+}
+
+tr:not(:first-child):hover {
+    background-color: #cccccc;
+}
+
+.Progressive {
+    color: darkmagenta;
+}
+
+.Adaptive {
+    color: rgb(0, 90, 0);
+}
+
+.itag {
+    text-align: center;
+}
+
+.resolution, .mime_type {
+    text-align: left;
+    padding-left: 10pt;
+}
+
+.resolution {
+    font-weight: 500;
+}
+
+.video {
+    background-image: linear-gradient( 135deg,
+            #79F1A4 10%,
+            #0E5CAD 100%);
+}
+
+.audio {
+    background-image: linear-gradient(109.6deg,
+              rgba(255,115,68,1) 11.2%,
+              rgba(244,255,32,1) 100.6%);
+}
+
+.type {
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subtype {
+    text-align: left;
+    padding-left: 10pt;
+}
+
+.mp4 {
+    color: rgb(243, 50, 108);
+}
+
+.webm {
+    color: blue;
+}
+
+.bitrate {
+    text-align: right;
+    padding-right: 10pt;
+}
+
+.tdbutton {
+    text-align: center;
+}
+
+.btndownload {
+    border-radius: 5px;
+    font-size: 8pt;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+/**===== bars3 =====*/
+#bars3 {
+  display: none;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  height: 50px;
+  width:  50px;
+  margin: -25px 0 0 -25px;
+}
+
+#bars3 span {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  width:  9px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-animation: bars3 2s  infinite ease-in;
+          animation: bars3 2s  infinite ease-in;
+}
+
+#bars3 span:nth-child(2) {
+  left: 11px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#bars3 span:nth-child(3) {
+  left: 22px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#bars3 span:nth-child(4) {
+  left: 33px;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#bars3 span:nth-child(5) {
+  left: 44px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@keyframes bars3 {
+    0% {background: rgba(0, 0, 0, 0.25);}
+   25% {background: #000000;}
+   50% {background: rgba(0, 0, 0, 0.25);}
+  100% {background: rgba(0, 0, 0, 0.25);}
+}
+@-webkit-keyframes bars3 {
+    0% {background: rgba(0, 0, 0, 0.25);}
+   25% {background: #000000;}
+   50% {background: rgba(0, 0, 0, 0.25);}
+  100% {background: rgba(0, 0, 0, 0.25);}
+}
+/** END of bars3 */

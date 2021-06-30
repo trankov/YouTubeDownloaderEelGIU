@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="ytdownloader.css">
+    <script type="text/javascript" src="/eel.js"></script>
+  </head>
+
+  <body>
+    <div class="urlform">
+        <input type="text" id="txtTYurl">
+        <input type="button" id="btnSubmit" value="Get info">
+
+        <!--PRELOADER-->
+        <div id="bars3">
+            <span></span><span></span>
+            <span></span><span></span>
+            <span></span>
+        </div>
+        <!--/PRELOADER-->
+
+    </div>
+
+    <div id="lblSpaceholder">
+        <div class="imgpreview">
+            <img src="" id="imgpreview">
+        </div>
+        <div id="videodescription">
+            <a id="channelurl" target="_blank"><div id="channelname"></div></a>
+            <a id="videourl" target="_blank"><div id="videotitle"></div></a>
+            <div id="videosummary"></div>
+            <div id="videotags"></div>
+        </div>
+    </div>
+
+    <div id="progressbar">
+        <div id="progressvalue">Connecting...</div>
+    </div>
+
+    <div class="trackspace" id="trackspace" style="visibility: hidden;">
+        <table id="tracks">
+            <thead>
+                <tr>
+                    <th>ITag</th>
+                    <th>Mime Type</th>
+                    <th>Resolution</th>
+                    <th>FpS</th>
+                    <th>Video Codec</th>
+                    <th>Type</th>
+                    <th>Extension</th>
+                    <th>ABR</th>
+                    <th>Audio Codec</th>
+                    <th>Bitrate</th>
+                    <th>Package</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+  </body>
+  <script type="text/javascript" src='ytdownloader.js'></script>
+
+</html>
